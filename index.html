@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Forecast-Api</title>
+  </head>
+  <body class="main">
+    <section class="city">
+      <div class="city__container">
+        <img class="city__logo" src="./images/logo.svg" />
+        <label for="city-select" class="city__select">Выберете город</label>
+        <select class="city__select-sity" name="city-select">
+          <option class="city__zero">-</option>
+          <option class="city__moscow" value="Москва" data-offset="3">Москва</option>
+          <option class="city__minsk" value="Минск" data-offset="3">Минск</option>
+          <option class="city__ircutsk" value="Иркутск" data-offset="8">Иркутск</option>
+          <option class="city__sochi" value="Сочи" data-offset="3">Сочи</option>
+          <option class="city__rostov" value="Ростов" data-offset="3">Ростов</option>
+          <option class="city__krasnodar" value="Краснодар" data-offset="3">Краснодар</option>
+          <option class="city__tbilisi" value="Тбилиси" data-offset="4">Тбилиси</option>
+        </select>
+        <button class="city__button" type="button">Продолжить</button>
+        <div class="city__welcome-img"></div>
+      </div>
+    </section>
+
+    <section class="weather">
+      <div class="weather__container">
+        <div class="weather__item">
+          <div class="weather__city-info-wrap">
+            <div class="weather__city-info">
+              <div class="weater__location">
+                <p class="weather__city-name"></p>
+                <span class="weather__country"></span>
+              </div>
+              <p class="weather__city-date"></p>
+            </div>
+
+            <p class="weather__time"></p>
+          </div>
+
+          <div class="weather__temp">
+            <div class="weather__temp-wrap">
+              <p class="weather__temp-result"></p>
+              <span class="weather__temp-max-result"></span>
+              <span class="weather__temp-min-result"></span>
+              <span class="weather__sum"></span>
+            </div>
+            <img class="weather__img" src="./images/sun.png" />
+          </div>
+        </div>
+
+        <div class="weather__container-add">
+          <div class="weather__add-container">
+            <img class="weather__humid-img" src="./images/drop.svg" />
+            <div class="test">
+              <span class="weather__humid-result result"></span>
+              <p class="weather__humid title">Влажность</p>
+            </div>
+          </div>
+
+          <div class="weather__add-container">
+            <img class="weather__wind-img" src="./images/wind.svg" />
+            <div class="test">
+              <span class="weather__wind-result result"></span>
+              <p class="weather__wind title">Скорость ветра</p>
+            </div>
+          </div>
+
+          <div class="weather__add-container">
+            <img class="weather__pressure-img" src="./images/pressure.svg" />
+            <div class="test">
+              <span class="weather__pressure-result result"></span>
+              <p class="weather__pressure title">Давление</p>
+            </div>
+          </div>
+        </div>
+
+        <img class="city__logo_footer" src="./images/logo.svg" />
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>

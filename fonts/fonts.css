@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Coil;
+  src: url('./Coil-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Coil;
+  src: url('./Coil-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
