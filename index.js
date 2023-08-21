@@ -36,7 +36,7 @@ function selectCountry(res) {
 //запрос на сервер
 function getResults(name) {
   return fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${name}&lang=ru&units=metric&appid=c0a7df6ec99bd320319fbfee6e8f12cf`
+    `https://api.openweathermap.org/data/2.5/weather?q=${name}&lang=ru&units=metric&appid=c0a7df6ec99bd320319fbfee6e8f12cf`
   ).then(res => {
     if (!res.ok) {
       return Promise.reject(`Ошибка: ${res.status}`);
